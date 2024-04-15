@@ -1,21 +1,21 @@
-import './App.css'
+// import './App.css'
 import Home from './pages/Home'
 import About from './pages/About'
 import Dashboard from './pages/Dashboard'
 import User from './pages/User'
 import PageError from './pages/PageError'
-import Root from './components/Root'
+import RootLayout from './style/layout/RootLayout'
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Root />,
+    element: <RootLayout />,
     errorElement: <PageError />,
     children: [
       {
-        path: '',
+        path: '/',
         element: <Home />,
       },
       {
@@ -35,18 +35,6 @@ const router = createBrowserRouter([
     ],
   },
 ])
-
-// function Root() {
-//   return (
-//     <>
-//       <Header />
-//       <Container sx={{ my: '10px' }}>
-//         <Outlet />
-//       </Container>
-//       <Footer />
-//     </>
-//   )
-// }
 
 function App() {
   return <RouterProvider router={router} />

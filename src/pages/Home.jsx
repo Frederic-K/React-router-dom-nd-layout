@@ -1,12 +1,10 @@
-import { Container, Paper, Typography } from '@mui/material'
+import { Box, Typography } from '@mui/material'
 
 const Home = () => {
   return (
-    <Container>
-      <Paper>
-        <Typography>This is my HOME PAGE</Typography>
-      </Paper>
-    </Container>
+    <Box sx={{ bgcolor: 'lightcoral' }}>
+      <Typography>This is my HOME PAGE</Typography>
+    </Box>
   )
 }
 

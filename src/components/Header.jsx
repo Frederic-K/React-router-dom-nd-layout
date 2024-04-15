@@ -1,12 +1,18 @@
-import { Container, Paper, Typography } from '@mui/material'
+import { Box, Typography } from '@mui/material'
 
 const Header = () => {
   return (
-    <Container>
-      <Paper>
-        <Typography>This is my HEADER</Typography>
-      </Paper>
-    </Container>
+    <Box
+      component="header"
+      // position="fixed"
+      // position="static"
+      sx={{
+        bgcolor: 'lightBlue',
+        // alignItems: 'center',
+      }}
+    >
+      <Typography>This is my HEADER</Typography>
+    </Box>
   )
 }
 

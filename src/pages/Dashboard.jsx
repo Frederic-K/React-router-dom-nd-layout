@@ -1,14 +1,12 @@
-import { Container, Paper, Typography } from '@mui/material'
+import { Box, Typography } from '@mui/material'
 import { Outlet } from 'react-router-dom'
 
 const Dashboard = () => {
   return (
-    <Container>
-      <Paper>
-        <Typography>Dashboard for User</Typography>
-      </Paper>
+    <Box sx={{ bgcolor: 'lightcoral' }}>
+      <Typography>Dashboard for User</Typography>
       <Outlet />
-    </Container>
+    </Box>
   )
 }
 

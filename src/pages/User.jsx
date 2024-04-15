@@ -1,14 +1,12 @@
-import { Container, Paper, Typography } from '@mui/material'
+import { Box, Typography } from '@mui/material'
 import { useParams } from 'react-router-dom'
 
 const User = () => {
   const { id } = useParams()
   return (
-    <Container>
-      <Paper>
-        <Typography>USER N° {id}</Typography>
-      </Paper>
-    </Container>
+    <Box sx={{ bgcolor: 'lightcoral' }}>
+      <Typography>USER N° {id}</Typography>
+    </Box>
   )
 }
 
